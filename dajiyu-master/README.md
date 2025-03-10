@@ -11,8 +11,8 @@ Here you can have a [video demo](https://youtu.be/8J73Ipf_oyI)
 
 Run [this link](https://jiyushengkui--kuailedajiyi.vercel.app/) to play the game.
 
-    Use mouse cursor to control the position to throw the ball
-    Use mouse left click to throw the ball with random generated size
+    Use finger pull / mouse cursor to control the position to throw the ball
+    Use finger release / mouse left click to throw the ball with random generated size
     Balls with same size will composite into a bigger ball
     Composite the biggest ball before filling up the interface to win the game!
 

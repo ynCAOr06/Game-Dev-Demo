@@ -1,27 +1,28 @@
 # Game Project Code Demo
 
-This document contains the mainn source code for three of my game projects. 
+This document contains the mainn source code for three of my game projects.
 The overall sourscode and project structure can be found on my
 [github repositry](https://github.com/ynCAOr06/USC_Appication_Game_demo).
 
 [https://github.com/ynCAOr06/USC_Appication_Game_demo](https://github.com/ynCAOr06/USC_Appication_Game_demo)
 
-A more structured [pdf file](./Game_Project_Code_Demo.pdf) can be downloaded here [[download PDF](https://github.com/ynCAOr06/USC_Appication_Game_demo/raw/main/Game_Project_Code_Demo.pdf)]
+A more structured [pdf file](./Game_Project_Code_Demo.pdf) can be downloaded here [[download PDF](https://github.com/ynCAOr06/Game-Dev-Demo/raw/main/Game_Project_Code_Demo.pdf)]
 
 ## Dropnumber_2048
+
 ### Overview
+
 This is a python game project.
 
 Run game.py to play the game.
 
     Use "←" and "→" to decide the location of the current dropping number.
-    Use  "↓"  to drop the current number. 
+    Use  "↓"  to drop the current number.
 
-If a number block is dropped, the two adjacent identical number blocks will be synthesized into one block. 
+If a number block is dropped, the two adjacent identical number blocks will be synthesized into one block.
 
-If the height of the number blocks exceed 5 blocks, then the game is over. 
-If a number block 2048 is synthesized, then you win the game. 
-
+If the height of the number blocks exceed 5 blocks, then the game is over.
+If a number block 2048 is synthesized, then you win the game.
 
 <div style="text-align: center;">
   <img src="./Dropnumber_2048_python/Win_demo.png" width="300" height="300">
@@ -30,7 +31,9 @@ If a number block 2048 is synthesized, then you win the game.
 <div style="page-break-before: always;"></div>
 
 ### Code Display
+
 #### game logic
+
 ```python
 # logic.py
 import random
@@ -169,9 +172,8 @@ def right(game):
     return game, is_down
 ```
 
-
-
 #### game initialization
+
 ```python
 #puzzle.py
 from tkinter import Frame, Label, CENTER
@@ -289,6 +291,7 @@ game_grid = GameGrid()
 ```
 
 #### game grid
+
 ```python
 #game.py
 import numpy as np
@@ -401,10 +404,13 @@ game_grid = GameGrid()
 ```
 
 ---
+
 <div style="page-break-before: always;"></div>
 
-## Space_Combat 
+## Space_Combat
+
 ### Overview
+
 This is a C++ game based on OpenGL.
 
 Double Click !Game.exe to play the game.
@@ -420,53 +426,53 @@ Instructions:
 
 Keyboard:
 
-	Key "Esc": exit
-	Key "UP": Move the spacecraft forward (With an acceleration process).
-	Key "DOWN": Move the spacecraft backwad (With an acceleration process).
-	Key "LEFT": Move the spacecraft to the left.
-	Key "RIGHT": Move the spacecraft to the right.
-	Key "Q": Make the spacecraft turn left (Similar to mouse control).
-	Key "E": Make the spacecraft turn right (Similar to mouse control).
-	Key "LEFT_SHIFT": Use the booster (Increase the maximum velocity andacceleration).
-	Key "W": Increase the brightness of directional light.
-	Key "S": Reduce the brightness of directional light.
+    Key "Esc": exit
+    Key "UP": Move the spacecraft forward (With an acceleration process).
+    Key "DOWN": Move the spacecraft backwad (With an acceleration process).
+    Key "LEFT": Move the spacecraft to the left.
+    Key "RIGHT": Move the spacecraft to the right.
+    Key "Q": Make the spacecraft turn left (Similar to mouse control).
+    Key "E": Make the spacecraft turn right (Similar to mouse control).
+    Key "LEFT_SHIFT": Use the booster (Increase the maximum velocity andacceleration).
+    Key "W": Increase the brightness of directional light.
+    Key "S": Reduce the brightness of directional light.
 
 Mouse:
 
-	Change camera position: Press and hold the left button then move the mouse.
-
+    Change camera position: Press and hold the left button then move the mouse.
 
 Manipulation:
 
-	Features:
-	There are multiple objects rendered in the scene, including the planet, the spacecraft, the vehicle, the asteroid ring, the spacestation and the ufo.
+    Features:
+    There are multiple objects rendered in the scene, including the planet, the spacecraft, the vehicle, the asteroid ring, the spacestation and the ufo.
 
-	The planet is mapped by combining 3 textures, including the earth surface, the 	earth cloud and the earth illumination.
-	(Reference: https://www.cgtrader.com/free-3d-models/space/planet/earth-and-international-space-station)
-	Also, the earth normal is mapped onto it. It does self-rotation all the time.
+    The planet is mapped by combining 3 textures, including the earth surface, the 	earth cloud and the earth illumination.
+    (Reference: https://www.cgtrader.com/free-3d-models/space/planet/earth-and-international-space-station)
+    Also, the earth normal is mapped onto it. It does self-rotation all the time.
 
-	The spacecraft could be controlled with the instructions below, to make it more realistic, I've add the velocity and acceleration when moving forward and backward, so it takes some time for it to reach its max speed. You can hold left shift to increase the maximum velocity and acceleration.
+    The spacecraft could be controlled with the instructions below, to make it more realistic, I've add the velocity and acceleration when moving forward and backward, so it takes some time for it to reach its max speed. You can hold left shift to increase the maximum velocity and acceleration.
 
-	The camera viewpoint is always behind and a little bit above the spacecraft.
+    The camera viewpoint is always behind and a little bit above the spacecraft.
 
-	The vehicle and the ufo are quite similar, the vehicle is given in the package and the ufo is found online.
-	(Reference: https://www.cgtrader.com/free-3d-models/space/spaceship/free-flying-saucer)
-	They are always doing self-rotation and are randomly jumping within a certain horizontal area at a certain time.
-	When the spacecraft touches them, they will change their rotation speed and texture color forever, and they stay put until the spacecraft moves away.
+    The vehicle and the ufo are quite similar, the vehicle is given in the package and the ufo is found online.
+    (Reference: https://www.cgtrader.com/free-3d-models/space/spaceship/free-flying-saucer)
+    They are always doing self-rotation and are randomly jumping within a certain horizontal area at a certain time.
+    When the spacecraft touches them, they will change their rotation speed and texture color forever, and they stay put until the spacecraft moves away.
 
-	The asteroid ring is waiting to be added by teammate.
+    The asteroid ring is waiting to be added by teammate.
 
-	The spacestation is a static object loaded online.
-	(Reference: https://www.cgtrader.com/free-3d-models/space/other/overseer-station-element-one--3)
+    The spacestation is a static object loaded online.
+    (Reference: https://www.cgtrader.com/free-3d-models/space/other/overseer-station-element-one--3)
 
-	There is a skybox showing the universe.
+    There is a skybox showing the universe.
 
-	There are two light sources, one is directional light with sunlight (yellow) color, one is point light with ocean (blue) color.
-	The directional light could be controlled with the instructions above.
-
+    There are two light sources, one is directional light with sunlight (yellow) color, one is point light with ocean (blue) color.
+    The directional light could be controlled with the instructions above.
 
 ### Code Display
+
 #### main game file
+
 ```cpp
 // main.cpp
 
@@ -893,7 +899,7 @@ void loadspacecraft() {
 	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, uv));
 	glEnableVertexAttribArray(2);
 	glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, normal));
-	
+
 }
 
 void loadvehicle() {
@@ -929,7 +935,7 @@ void loadrock() {
 
 	glm::mat4* modelMatrices;
 	modelMatrices = new glm::mat4[rock_amount];
-	srand(glfwGetTime()); // initialize random seed	
+	srand(glfwGetTime()); // initialize random seed
 	for (unsigned int i = 0; i < rock_amount; i++)
 	{
 		glm::mat4 model = glm::mat4(1.0f);
@@ -1383,7 +1389,7 @@ void paintGL(void) //always run
 {
 	glClearColor(0.5f, 0.5f, 0.5f, 0.5f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
+
 	current_time = glfwGetTime();
 	delta_time = current_time - last_time;
 	last_time = current_time;
@@ -1436,7 +1442,7 @@ void paintGL(void) //always run
 	glBindTexture(GL_TEXTURE_2D, planet_t[3]);
 	glUniform1i(TextureID_3, 3);
 	glDrawElements(GL_TRIANGLES, planet.indices.size(), GL_UNSIGNED_INT, 0);
-	
+
 
 	//Transform matrix for rock
 	setUniform(3);
@@ -1459,7 +1465,7 @@ void paintGL(void) //always run
 	//Transform matrix for spacecraft
 	setUniform(0);
 	spacecraftControl();
-	
+
 	modelTransformMatrix = glm::mat4(1.0f);
 	modelTransformMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(x_pos, y_pos, z_pos));
 	modelTransformMatrix = glm::scale(modelTransformMatrix, glm::vec3(0.001f, 0.001f, 0.001f));
@@ -1786,7 +1792,8 @@ int main(int argc, char* argv[])
 ```
 
 ### shader code
-``` cpp
+
+```cpp
 // shader.cpp
 
 #include "Shader.h"
@@ -1912,8 +1919,10 @@ bool Shader::checkStatus(GLuint objectID, PFNGLGETSHADERIVPROC objectPropertyGet
 	return true;
 }
 ```
+
 ### texture code
-``` cpp
+
+```cpp
 // texture.cpp
 
 #include "Texture.h"
@@ -1947,7 +1956,7 @@ void Texture::setupTexture(const char* texturePath)
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-	
+
 	if (data) {
 		glTexImage2D(GL_TEXTURE_2D, 0, format, Width, Height, 0, format, GL_UNSIGNED_BYTE, data);
 		glGenerateMipmap(GL_TEXTURE_2D);
@@ -1975,18 +1984,19 @@ void Texture::unbind() const
 ```
 
 ---
+
 <div style="page-break-before: always;"></div>
 
-
-
 ## Mimic_Pokémon
+
 ### Overview
+
 This is a Unity game project.
 
 Run game.exe to play the game.
 
     Use "WASD" to control the movement of the player
-    Use "space" jump 
+    Use "space" jump
     Use mouse left click to throw the axe to attact
     Use mouse right click to throw the Poké Ball to catch creatures
 
@@ -1997,13 +2007,13 @@ Run game.exe to play the game.
   <img src="./Mimic_Pokémon_Unity/demo2.png" width="400" height="280">
 </div>
 
-
 <div style="page-break-before: always;"></div>
 
-
 ### Code Display
+
 #### C# scripts for main character
-``` csharp
+
+```csharp
 // player.cs
 using System.Collections;
 using System.Collections.Generic;
@@ -2029,7 +2039,7 @@ public class Player : MonoBehaviour
 
 	Animator animator;
 	Rigidbody rigid;
-	
+
 	// 发射子弹的起始位置
 	public Transform firePos;
 
@@ -2099,7 +2109,7 @@ public class Player : MonoBehaviour
 		}
 
 		transform.Rotate(0, turnAmount * rotateSpeed * Time.deltaTime, 0);
-		
+
 		rigid.velocity = transform.forward * forwardAmount * moveSpeed + transform.up * verticalSpeed;
 	}
 
@@ -2132,9 +2142,9 @@ public class Player : MonoBehaviour
 
 		shellInstance.velocity = fireForce * firePos.forward;
 		shellInstance.transform.Rotate(0, 180, 0);
-		shellInstance.angularVelocity = new Vector3(0, 0, -20); 
-		//float Ang = 10; 
-		//Ang += Time.deltaTime * 100; 
+		shellInstance.angularVelocity = new Vector3(0, 0, -20);
+		//float Ang = 10;
+		//Ang += Time.deltaTime * 100;
 		//shellInstance.transform.Rotate(new Vector3(0, Ang, 0), Space.Self);
 
 		animator.SetTrigger("Attack");
@@ -2153,9 +2163,10 @@ public class Player : MonoBehaviour
 }
 
 ```
+
 <br>
 
-## This is the end of the code demonstration. 
+## This is the end of the code demonstration.
 
-Feel free to access my [github repositry](https://github.com/ynCAOr06/USC_Appication_Game_demo) to have hand on experiences with my projects. 
+Feel free to access my [github repositry](https://github.com/ynCAOr06/USC_Appication_Game_demo) to have hand on experiences with my projects.
 [https://github.com/ynCAOr06/USC_Appication_Game_demo](https://github.com/ynCAOr06/USC_Appication_Game_demo)

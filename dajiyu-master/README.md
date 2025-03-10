@@ -5,6 +5,8 @@
 This is a Web App game project, and it is desigend for monbile devices with vertical screen view.\
 The web service is based on Tencent cloud and you can lick [this link](https://jiyushengkui--kuailedajiyi.vercel.app/) to play the game!
 
+This project is inheritaged form [daxigua](https://github.com/liyupi/daxigua) developed by [lipypi](https://github.com/liyupi). 
+
 You can find all source code in /src. 
 
 Here you can have a [video demo](https://youtu.be/8J73Ipf_oyI)

@@ -1,24 +1,26 @@
-## Mimic_Pokémon
+## dajiyu composition
+
 ### Overview
-This is a Unity game project.
 
-You can find all source code in /src. 
+This is a Web App game project, and it is desigend for monbile devices with vertical screen view.
+The web service is based on Tencent cloud and you can lick [this link](https://jiyushengkui--kuailedajiyi.vercel.app/) to play the game!
 
-Here you can have a [video demo](https://youtu.be/8J73Ipf_oyI)
+You can find all source code in /src. \
 
-Run game.exe to play the game.
+Here you can have a [video demo](https://youtu.be/8J73Ipf_oyI)\
 
-    Use "WASD" to control the movement of the player
-    Use "space" jump 
-    Use mouse left click to throw the axe to attact
-    Use mouse right click to throw the Poké Ball to catch creatures
+Run [this link](https://jiyushengkui--kuailedajiyi.vercel.app/) to play the game.
+
+    Use mouse cursor to control the position to throw the ball
+    Use mouse left click to throw the ball with random generated size
+    Balls with same size will composite into a bigger ball
+    Composite the biggest ball before filling up the interface to win the game!
 
 <div style="text-align: center;">
-  <img src="./demo1.png" width="360" height="240">
+  <img src="./interface_1.jpg" width="260" height="570">
 </div>
 <div style="text-align: center;">
-  <img src="./demo2.png" width="400" height="280">
+  <img src="./interface_2.jpg" width="260" height="570">
 </div>
-
 
 <div style="page-break-before: always;"></div>

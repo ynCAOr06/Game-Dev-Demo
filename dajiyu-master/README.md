@@ -2,7 +2,7 @@
 
 ### Overview
 
-This is a Web App game project, and it is desigend for monbile devices with vertical screen view.
+This is a Web App game project, and it is desigend for monbile devices with vertical screen view./
 The web service is based on Tencent cloud and you can lick [this link](https://jiyushengkui--kuailedajiyi.vercel.app/) to play the game!
 
 You can find all source code in /src. 
